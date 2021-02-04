@@ -1,0 +1,7 @@
+/* pages/informant_page_2/informant_page_2.wxss */
+.weui-tabbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0
+}

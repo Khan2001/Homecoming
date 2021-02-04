@@ -1,0 +1,29 @@
+<!--pages/informant_page_1/informant_page_1.wxml-->
+<view class="page" data-weui-theme="{{theme}}">
+	<view class="page__bd" style="height: 100%;">
+		<view class="weui-tab">
+			<view class="weui-tabbar">
+				<view class="weui-tabbar__item weui-bar__item_on">
+					<image src="../images/file-chart_hl.png" class="weui-tabbar__icon"></image>
+					<view class="weui-tabbar__label">案件信息</view>
+				</view>
+				<view class="weui-tabbar__item" bindtap="toAccountPage">
+					<image src="../images/account.png" class="weui-tabbar__icon"></image>
+					<view class="weui-tabbar__label">账号管理</view>
+				</view>
+			</view>
+		</view>
+        <!-- <view class="weui-tab">
+			<view class="weui-tabbar">
+				<view class="weui-tabbar__item">
+					<image src="../images/file-chart.png" class="weui-tabbar__icon"></image>
+					<view class="weui-tabbar__label">案件信息</view>
+				</view>
+				<view class="weui-tabbar__item weui-bar__item_on">
+					<image src="../images/account_hl.png" class="weui-tabbar__icon"></image>
+					<view class="weui-tabbar__label">账号管理</view>
+				</view>
+			</view>
+		</view> -->
+	</view>
+</view>

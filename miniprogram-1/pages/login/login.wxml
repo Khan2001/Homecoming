@@ -1,0 +1,60 @@
+<!--pages/login/login.wxml-->
+<view class="page">
+	<form class="weui-form" bindsubmit="clickLoginBtn">
+		<view class="weui-form__text-area">
+			<view class="weui-form__title">账号登录</view>
+		</view>
+		<view class="weui-form__control-area">
+			<view class="weui-cells__group weui-cells__group_form">
+				<view class="weui-cells weui-cells_form">
+					<view class="weui-cell weui-cell_active">
+						<view class="weui-cell__hd"><label class="weui-label">手机号</label></view>
+						<view class="weui-cell__bd">
+							<input class="weui-input" placeholder="填写本人手机号" placeholder-class="weui-input__placeholder" name="id" />
+						</view>
+					</view>
+					<view class="weui-cell weui-cell_active">
+						<view class="weui-cell__hd">
+							<label class="weui-label">密码</label>
+						</view>
+						<view class="weui-cell__bd">
+							<input class="weui-input" placeholder="填写该账号密码" type="password" placeholder-class="weui-input__placeholder" name="password" />
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="weui-btn-area">
+			<button class="weui-btn" type="primary" form-type="submit">登录</button>
+			<button class="weui-btn" type="default" bindtap="returnLastPage">返回</button>
+		</view>
+	</form>
+
+	<view class="fadeIn {{hideToast ? 'fadeOut' : ''}}" wx:if="{{toast}}">
+		<view class="weui-mask_transparent"></view>
+		<view class="weui-toast">
+			<i class="weui-icon-success-no-circle weui-icon_toast"></i>
+			<view class="weui-toast__content">{{success}}</view>
+		</view>
+	</view>
+
+	<view class="fadeIn {{hideWarnToast ? 'fadeOut' : ''}}" wx:if="{{warnToast}}">
+		<view class="weui-mask_transparent"></view>
+		<view class="weui-toast">
+			<i class="weui-icon-warn weui-icon_toast"></i>
+			<view class="weui-toast__content">{{warn}}</view>
+		</view>
+	</view>
+
+	<view class="fadeIn {{hideLoading ? 'fadeOut' : ''}}" wx:if="{{loading}}">
+		<view class="weui-mask_transparent"></view>
+		<view class="weui-toast">
+			<view class="weui-primary-loading weui-primary-loading_transparent weui-icon_toast">
+				<view class="weui-primary-loading__dot"></view>
+			</view>
+			<view class="weui-toast__content">请稍后</view>
+		</view>
+	</view>
+
+	<view class="weui-toptips weui-toptips_warn fadeIn {{hide ? 'fadeOut' : ''}}" wx:if="{{topTips}}">{{tips}}</view>
+</view>

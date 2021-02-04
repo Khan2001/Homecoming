@@ -1,0 +1,16 @@
+/**index.wxss**/
+.weui-form {
+  margin-top: 150rpx;
+}
+
+.weui-form__title {
+  font-size: 100rpx;
+}
+
+.weui-form__desc {
+  font-size: 40rpx;
+}
+
+.weui-btn-area {
+  margin-top: 400rpx;
+}

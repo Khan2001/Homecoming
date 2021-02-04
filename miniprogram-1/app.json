@@ -1,0 +1,21 @@
+{
+  "entryPagePath": "pages/index/index",
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/logs/logs",
+    "pages/informant_page_1/informant_page_1",
+    "pages/informant_page_2/informant_page_2",
+    "pages/page404/page404"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "归家行动",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {}
+}
